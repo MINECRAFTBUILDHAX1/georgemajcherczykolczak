@@ -5,140 +5,145 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>George Majcherczyk-Olczak | Tenor Vocalist</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Inter', sans-serif;
-    }
-    body {
-      background: linear-gradient(to bottom right, #111927, #1c2a3a);
-      color: #e0e0e0;
-      scroll-behavior: smooth;
-      text-align: center;
-    }
+ <style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+  }
+
+  body {
+    background: linear-gradient(to bottom right, #f5f7fa, #e0eafc);
+    color: #222;
+    scroll-behavior: smooth;
+    text-align: center;
+  }
+
+  header {
+    padding: 4rem 1rem 2rem;
+    background: linear-gradient(to right, #ffffff, #dfe6ef);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  }
+
   .header-content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: nowrap; /* No wrap */
-  gap: 2rem;
-  padding: 2rem 1rem;
-  flex-direction: row;
-}
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 2.5rem;
+    padding: 2.5rem 1rem;
+    flex-direction: row;
+  }
 
-.header-content img {
-  width: 140px;
-  
-  border: 3px solid #2f81f7;
-}
+  .header-content img {
+    width: 180px;
+    border-radius: 12px;
+    border: 3px solid #d4af37;
+    box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+  }
 
-.header-text {
-  flex: 1;
-  min-width: 250px;
-  max-width: 600px;
-  text-align: left;
-}
+  .header-text {
+    flex: 1;
+    min-width: 250px;
+    max-width: 600px;
+    text-align: left;
+  }
 
+  .header-text h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #222;
+	white-space: nowrap;  
+  }
 
-.header-text h1 {
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: #fff;
-}
+  .header-text p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-top: 0.6rem;
+  }
 
-.header-text p {
-  font-size: 1.1rem;
-  color: #a0aab8;
-  margin-top: 0.5rem;
-}
+  main {
+    max-width: 850px;
+    margin: 3rem auto;
+    padding: 0 1rem;
+  }
 
-   header {
-      padding: 4rem 1rem 2rem;
-      background: #0d1117;
-    }
-  
-    }
-    header h1 {
-      font-size: 2.5rem;
-      font-weight: 700;
-      color: #fff;
-    }
-    header p {
-      font-size: 1.1rem;
-      color: #a0aab8;
-      margin-top: 0.5rem;
-    }
-    main {
-      max-width: 850px;
-      margin: 3rem auto;
-      padding: 0 1rem;
-    }
-    section {
-      margin-bottom: 4rem;
-      opacity: 0;
-      transform: translateY(80px);
-      transition: all 1s ease;
-    }
-    section.visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
-    section h2 {
-      font-size: 1.8rem;
-      margin-bottom: 1.2rem;
-      color: #ffffff;
-      border-bottom: 2px solid #2f81f7;
-      display: inline-block;
-      padding-bottom: 0.3rem;
-      margin-top: 0.5rem; /* Adjust space above the section titles */
-    }
-    .info-block {
-      margin: 0 auto 1.5rem;
-      max-width: 700px;
-      background: rgba(255, 255, 255, 0.05);
-      padding: 1rem;
-      border-radius: 8px;
-    }
-    .music-previews {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin-top: 0.25rem; /* Add space above the music previews */
-    }
-    .music-previews audio {
-      margin-top: 0.25rem;
-      width: 90%;
-    }
-    .socials {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 1.5rem;
-      font-size: 1.1rem;
-    }
-    .socials a {
-      color: #2f81f7;
-      text-decoration: none;
-      font-weight: 500;
-    }
-    .socials a:hover {
-      color: #58a6ff;
-      text-decoration: underline;
-    }
-    footer {
-      text-align: center;
-      padding: 2rem 1rem;
-      color: #888;
-      font-size: 0.9rem;
-    }
-    .box {
-      width: 20px;
-      height: 20px;
-      margin-bottom: 0px; /* Adds space below the first box */
-    }
-  </style>
+  section {
+    margin-bottom: 4rem;
+    opacity: 0;
+    transform: translateY(80px);
+    transition: all 1s ease;
+  }
+
+  section.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  section h2 {
+    font-size: 2rem;
+    margin-bottom: 1.4rem;
+    color: #333;
+    border-bottom: 2px solid #d4af37;
+    display: inline-block;
+    padding-bottom: 0.3rem;
+    margin-top: 0.5rem;
+  }
+
+  .info-block {
+    margin: 0 auto 1.5rem;
+    max-width: 700px;
+    background: rgba(255, 255, 255, 0.6);
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  }
+
+  .music-previews {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0.25rem;
+  }
+
+  .music-previews audio {
+    margin-top: 0.25rem;
+    width: 90%;
+  }
+
+  .socials {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    font-size: 1.1rem;
+  }
+
+  .socials a {
+    color: #d4af37;
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  .socials a:hover {
+    color: #bfa24d;
+    text-decoration: underline;
+  }
+
+  footer {
+    color: #777;
+    font-size: 0.9rem;
+    padding: 2rem 1rem;
+  }
+
+  .box {
+    width: 20px;
+    height: 20px;
+    margin-bottom: 0px;
+  }
+</style>
+
 </head>
 <body>
   <header>
