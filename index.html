@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>George Majcherczyk-Olczak | Tenor Vocalist</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+    body {
+      background: linear-gradient(to bottom right, #111927, #1c2a3a);
+      color: #e0e0e0;
+      scroll-behavior: smooth;
+      text-align: center;
+    }
+    header {
+      padding: 4rem 1rem 2rem;
+      background: #0d1117;
+    }
+    header img {
+      width: 140px;
+      border-radius: 50%;
+      border: 3px solid #2f81f7;
+      margin-bottom: 1rem;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: #fff;
+    }
+    header p {
+      font-size: 1.1rem;
+      color: #a0aab8;
+      margin-top: 0.5rem;
+    }
+    main {
+      max-width: 850px;
+      margin: 3rem auto;
+      padding: 0 1rem;
+    }
+    section {
+      margin-bottom: 4rem;
+      opacity: 0;
+      transform: translateY(80px);
+      transition: all 1s ease;
+    }
+    section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    section h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1.2rem;
+      color: #ffffff;
+      border-bottom: 2px solid #2f81f7;
+      display: inline-block;
+      padding-bottom: 0.3rem;
+    }
+    .info-block {
+      margin: 0 auto 1.5rem;
+      max-width: 700px;
+      background: rgba(255, 255, 255, 0.05);
+      padding: 1rem;
+      border-radius: 8px;
+    }
+    .music-previews {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .music-previews audio {
+      margin-top: 1.5rem;
+      width: 90%;
+    }
+    .socials {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      font-size: 1.1rem;
+    }
+    .socials a {
+      color: #2f81f7;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .socials a:hover {
+      color: #58a6ff;
+      text-decoration: underline;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      color: #888;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="GEORGE PIC 1.jpg" alt="George Majcherczyk-Olczak" />
+    <h1>George Majcherczyk-Olczak</h1>
+    <p>Rising tenor with a passion for storytelling through music.<br>Blending tradition, shaping the future of vocal artistry! 🎤✨</p>
+  </header>
+
+  <main>
+    <section class="fade-in">
+      <h2>About George</h2>
+      <div class="info-block">
+        George is a classically trained tenor whose emotive and powerful voice has captivated audiences in both live and recorded settings. He is known for blending tradition with modern expression and has performed at prestigious venues such as Cadogan Hall. His musical journey includes performances with the Orpheus Sinfonia and the Mozart Symphony Orchestra, bringing heartfelt vocal storytelling to every stage.
+      </div>
+    </section>
+
+    <section class="fade-in">
+      <h2>Selected Performance</h2>
+      <div class="info-block">
+        <strong>Pie Jesu</strong> – Performed at a Remembrance Service
+      </div>
+    </section>
+
+    <section class="fade-in music-previews">
+      <h2>Music Previews</h2>
+      <audio controls src="preview-pie-jesu.mp3"></audio>
+    </section>
+
+    <section class="fade-in">
+      <h2>Experience & Achievements</h2>
+      <div class="info-block">ABRSM Diploma in Voice – Distinction</div>
+      <div class="info-block">Music Scholar at Sixth Form College</div>
+      <div class="info-block">Soloist for Remembrance Day and Christmas Concerts</div>
+      <div class="info-block">Sings tenor in a choir</div>
+    </section>
+
+    <section class="fade-in">
+      <h2>Connect with George</h2>
+      <div class="socials">
+        <a href="https://www.instagram.com/george_mo16/" target="_blank">Instagram</a>
+        <a href="https://www.linkedin.com/in/george-majcherczyk-olczak-a42b452b8" target="_blank">LinkedIn</a>
+        <a href="https://music.apple.com/us/artist/george-majcherczyk-olczak/1757404997" target="_blank">Apple Music</a>
+        <a href="https://open.spotify.com/artist/2bzuTlT0NMx43zY5SoAuDq" target="_blank">Spotify</a>
+        <a href="https://www.youtube.com/channel/UCDA-39TFSaiZzbVSx2rZbAQ" target="_blank">YouTube</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 George Majcherczyk-Olczak. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const fadeSections = document.querySelectorAll('.fade-in');
+    const revealOnScroll = () => {
+      const triggerBottom = window.innerHeight * 0.9;
+      fadeSections.forEach((section, index) => {
+        const sectionTop = section.getBoundingClientRect().top;
+        if (sectionTop < triggerBottom) {
+          setTimeout(() => {
+            section.classList.add('visible');
+          }, index * 250);
+        }
+      });
+    };
+    window.addEventListener('scroll', revealOnScroll);
+    window.addEventListener('load', revealOnScroll);
+  </script>
+</body>
+</html>
