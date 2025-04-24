@@ -18,15 +18,47 @@
       scroll-behavior: smooth;
       text-align: center;
     }
-    header {
+  .header-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap; /* No wrap */
+  gap: 2rem;
+  padding: 2rem 1rem;
+  flex-direction: row;
+}
+
+.header-content img {
+  width: 140px;
+  
+  border: 3px solid #2f81f7;
+}
+
+.header-text {
+  flex: 1;
+  min-width: 250px;
+  max-width: 600px;
+  text-align: left;
+}
+
+
+.header-text h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.header-text p {
+  font-size: 1.1rem;
+  color: #a0aab8;
+  margin-top: 0.5rem;
+}
+
+   header {
       padding: 4rem 1rem 2rem;
       background: #0d1117;
     }
-    header img {
-      width: 140px;
-      border-radius: 50%;
-      border: 3px solid #2f81f7;
-      margin-bottom: 1rem;
+  
     }
     header h1 {
       font-size: 2.5rem;
@@ -60,6 +92,7 @@
       border-bottom: 2px solid #2f81f7;
       display: inline-block;
       padding-bottom: 0.3rem;
+      margin-top: 0.5rem; /* Adjust space above the section titles */
     }
     .info-block {
       margin: 0 auto 1.5rem;
@@ -72,9 +105,10 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      margin-top: 0.25rem; /* Add space above the music previews */
     }
     .music-previews audio {
-      margin-top: 1.5rem;
+      margin-top: 0.25rem;
       width: 90%;
     }
     .socials {
@@ -99,11 +133,18 @@
       color: #888;
       font-size: 0.9rem;
     }
+    .box {
+      width: 20px;
+      height: 20px;
+      margin-bottom: 0px; /* Adds space below the first box */
+    }
   </style>
 </head>
 <body>
   <header>
+      <div class="header-content">
     <img src="georgepic.jpg" alt="George Majcherczyk-Olczak" />
+    <div class="header-text">
     <h1>George Majcherczyk-Olczak</h1>
     <p>Rising tenor with a passion for storytelling through music.<br>Blending tradition, shaping the future of vocal artistry! 🎤✨</p>
   </header>
@@ -121,16 +162,21 @@
       <div class="info-block">
         <strong>Pie Jesu</strong> – Performed at a Remembrance Service
       </div>
+      <div class="info-block">
+        <strong>Pie Jesu</strong> – Performed at a Remembrance Service
+      </div>
     </section>
 
     <section class="fade-in music-previews">
       <h2>Music Previews</h2>
       <div class="info-block">Lord God of Abraham</div>
       <audio controls src="Lord God of Abraham.mp3"></audio>
+      <div class="box"></div>
       <div class="info-block">Ditty</div>
       <audio controls src="Ditty.mp3"></audio>
+      <div class="box"></div>
       <div class="info-block">Wachet auf, ruft uns die Stimme</div>
-      <audio controls src="Wachet auf, ruft uns die Stimm.mp3"></audio>
+      <audio controls src="Wachet auf, ruft uns die Stimme.mp3"></audio>
     </section>
 
     <section class="fade-in">
@@ -138,7 +184,7 @@
       <div class="info-block">ABRSM Diploma in Voice – Distinction</div>
       <div class="info-block">Music Scholar at Sixth Form College</div>
       <div class="info-block">Soloist for Remembrance Day and Christmas Concerts</div>
-      <div class="info-block">Sings tenor in a choir</div>
+      <div class="info-block">Sings tenor in a professional choir</div>
     </section>
 
     <section class="fade-in">
@@ -154,7 +200,7 @@
   </main>
 
   <footer>
-    <p>&copy; 2025 George Majcherczyk-Olczak. All rights reserved.</p>
+    <p>2025 Majcherczyk Olczak. All rights reserved.</p>
   </footer>
 
   <script>
